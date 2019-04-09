@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="buy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buy.Designer.cs">
+      <DependentUpon>buy.cs</DependentUpon>
+    </Compile>
     <Compile Include="InsertForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="buy.resx">
+      <DependentUpon>buy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InsertForm.resx">
       <DependentUpon>InsertForm.cs</DependentUpon>
     </EmbeddedResource>

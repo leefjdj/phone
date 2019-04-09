@@ -183,11 +183,11 @@ namespace WindowsFormsApplication1
                     }
                     else
                     {
-                        combo_color.Items.Add("(품절)");
+                        combo_color.Items.Add(reader.GetString(0) + "(품절)");
                     }
                 }
 
-
+                reader.Close();
                 conn.Close();
             }
             catch (Exception err)
@@ -205,8 +205,8 @@ namespace WindowsFormsApplication1
                 while (reader.Read())
                 {
                     lbl_price.Text = String.Format("{0:N0}원",reader.GetInt32(0));
-
                 }
+                reader.Close();
 
                 conn.Close();
             }
@@ -217,6 +217,50 @@ namespace WindowsFormsApplication1
             combo_color.Text = combo_color.Items[0].ToString();
         }
 
+        private void btnbuy_Click(object sender, EventArgs e)
+        {
+            if(combo_color.Text=="")
+            {
+                MessageBox.Show("기기를 선택하세요");
+            }
+            else
+            {
+                if(combo_color.Text.Substring(combo_color.Text.Length - 4, 4)=="(품절)")
+                {
+                    MessageBox.Show("품절되었습니다");
+                }
+                else
+                {
+                    int id=0;
+                    int price = 0;
+                    int count = 0;
+                    try
+                    {
+                        conn.Open();
+                        String sql = "select id,price,count from detail where name='" + lbl_name.Text + "' and storage='" + combo_size.Text + "' and color='" + combo_color.Text + "'";
 
+                        MySqlCommand cmd = new MySqlCommand(sql, conn);
+                        MySqlDataReader reader = cmd.ExecuteReader();
+
+                        reader.Read();
+                        id = reader.GetInt32(0);
+                        price = reader.GetInt32(1);
+                        count = reader.GetInt32(2);
+                        reader.Close();
+
+                        conn.Close();
+                        buy b = new buy(id,price,count);
+                        b.StartPosition = FormStartPosition.Manual;
+                        b.Location = new Point(300, 200);
+                        b.Show();
+                    }
+                    catch (Exception err)
+                    {
+                        Console.WriteLine(err.StackTrace);
+                    }
+
+                }
+            }
+        }
     }
 }

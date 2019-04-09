@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Grid_phone = new System.Windows.Forms.DataGridView();
             this.phone_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phone_price = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -116,8 +116,8 @@
             // 
             // phone_price
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.phone_price.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.phone_price.DefaultCellStyle = dataGridViewCellStyle4;
             this.phone_price.HeaderText = "가격";
             this.phone_price.Name = "phone_price";
             this.phone_price.ReadOnly = true;
@@ -214,6 +214,7 @@
             this.btnbuy.TabIndex = 3;
             this.btnbuy.Text = "구매";
             this.btnbuy.UseVisualStyleBackColor = true;
+            this.btnbuy.Click += new System.EventHandler(this.btnbuy_Click);
             // 
             // menuStrip1
             // 
@@ -224,7 +225,7 @@
             this.통계ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1103, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1144, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -279,9 +280,9 @@
             // 
             this.combo_color.Font = new System.Drawing.Font("굴림", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.combo_color.FormattingEnabled = true;
-            this.combo_color.Location = new System.Drawing.Point(967, 426);
+            this.combo_color.Location = new System.Drawing.Point(985, 426);
             this.combo_color.Name = "combo_color";
-            this.combo_color.Size = new System.Drawing.Size(130, 25);
+            this.combo_color.Size = new System.Drawing.Size(147, 25);
             this.combo_color.TabIndex = 5;
             // 
             // combo_size
@@ -290,7 +291,7 @@
             this.combo_size.FormattingEnabled = true;
             this.combo_size.Location = new System.Drawing.Point(720, 426);
             this.combo_size.Name = "combo_size";
-            this.combo_size.Size = new System.Drawing.Size(128, 25);
+            this.combo_size.Size = new System.Drawing.Size(147, 25);
             this.combo_size.TabIndex = 5;
             this.combo_size.SelectedIndexChanged += new System.EventHandler(this.combo_size_SelectedIndexChanged);
             // 
@@ -366,7 +367,7 @@
             this.lbl_size.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbl_size.Location = new System.Drawing.Point(720, 301);
             this.lbl_size.Name = "lbl_size";
-            this.lbl_size.Size = new System.Drawing.Size(377, 25);
+            this.lbl_size.Size = new System.Drawing.Size(412, 25);
             this.lbl_size.TabIndex = 2;
             this.lbl_size.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -377,7 +378,7 @@
             this.lbl_display.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbl_display.Location = new System.Drawing.Point(720, 326);
             this.lbl_display.Name = "lbl_display";
-            this.lbl_display.Size = new System.Drawing.Size(377, 25);
+            this.lbl_display.Size = new System.Drawing.Size(412, 25);
             this.lbl_display.TabIndex = 2;
             this.lbl_display.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -388,7 +389,7 @@
             this.lbl_ram.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbl_ram.Location = new System.Drawing.Point(720, 351);
             this.lbl_ram.Name = "lbl_ram";
-            this.lbl_ram.Size = new System.Drawing.Size(130, 25);
+            this.lbl_ram.Size = new System.Drawing.Size(147, 25);
             this.lbl_ram.TabIndex = 2;
             this.lbl_ram.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -399,7 +400,7 @@
             this.lbl_name.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbl_name.Location = new System.Drawing.Point(720, 276);
             this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(377, 25);
+            this.lbl_name.Size = new System.Drawing.Size(412, 25);
             this.lbl_name.TabIndex = 2;
             this.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -408,9 +409,9 @@
             this.lbl_company.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_company.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_company.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbl_company.Location = new System.Drawing.Point(967, 351);
+            this.lbl_company.Location = new System.Drawing.Point(985, 351);
             this.lbl_company.Name = "lbl_company";
-            this.lbl_company.Size = new System.Drawing.Size(130, 25);
+            this.lbl_company.Size = new System.Drawing.Size(147, 25);
             this.lbl_company.TabIndex = 2;
             this.lbl_company.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -419,7 +420,7 @@
             this.label11.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label11.Location = new System.Drawing.Point(847, 351);
+            this.label11.Location = new System.Drawing.Point(865, 351);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(121, 25);
             this.label11.TabIndex = 2;
@@ -433,7 +434,7 @@
             this.lbl_bat.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbl_bat.Location = new System.Drawing.Point(720, 376);
             this.lbl_bat.Name = "lbl_bat";
-            this.lbl_bat.Size = new System.Drawing.Size(130, 25);
+            this.lbl_bat.Size = new System.Drawing.Size(147, 25);
             this.lbl_bat.TabIndex = 2;
             this.lbl_bat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -442,9 +443,9 @@
             this.lbl_os.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_os.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_os.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbl_os.Location = new System.Drawing.Point(967, 376);
+            this.lbl_os.Location = new System.Drawing.Point(985, 376);
             this.lbl_os.Name = "lbl_os";
-            this.lbl_os.Size = new System.Drawing.Size(130, 25);
+            this.lbl_os.Size = new System.Drawing.Size(147, 25);
             this.lbl_os.TabIndex = 2;
             this.lbl_os.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -465,7 +466,7 @@
             this.label13.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label13.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label13.Location = new System.Drawing.Point(847, 376);
+            this.label13.Location = new System.Drawing.Point(865, 376);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(121, 25);
             this.label13.TabIndex = 2;
@@ -489,7 +490,7 @@
             this.label17.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label17.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label17.Location = new System.Drawing.Point(847, 426);
+            this.label17.Location = new System.Drawing.Point(865, 426);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(121, 25);
             this.label17.TabIndex = 2;
@@ -503,7 +504,7 @@
             this.lbl_price.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbl_price.Location = new System.Drawing.Point(720, 451);
             this.lbl_price.Name = "lbl_price";
-            this.lbl_price.Size = new System.Drawing.Size(377, 25);
+            this.lbl_price.Size = new System.Drawing.Size(412, 25);
             this.lbl_price.TabIndex = 2;
             this.lbl_price.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -526,7 +527,7 @@
             this.lbl_backcamera.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbl_backcamera.Location = new System.Drawing.Point(720, 401);
             this.lbl_backcamera.Name = "lbl_backcamera";
-            this.lbl_backcamera.Size = new System.Drawing.Size(130, 25);
+            this.lbl_backcamera.Size = new System.Drawing.Size(147, 25);
             this.lbl_backcamera.TabIndex = 2;
             this.lbl_backcamera.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -535,9 +536,9 @@
             this.lbl_frontcamera.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_frontcamera.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl_frontcamera.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lbl_frontcamera.Location = new System.Drawing.Point(967, 401);
+            this.lbl_frontcamera.Location = new System.Drawing.Point(985, 401);
             this.lbl_frontcamera.Name = "lbl_frontcamera";
-            this.lbl_frontcamera.Size = new System.Drawing.Size(130, 25);
+            this.lbl_frontcamera.Size = new System.Drawing.Size(147, 25);
             this.lbl_frontcamera.TabIndex = 2;
             this.lbl_frontcamera.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -558,7 +559,7 @@
             this.label8.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label8.Location = new System.Drawing.Point(847, 401);
+            this.label8.Location = new System.Drawing.Point(865, 401);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(121, 25);
             this.label8.TabIndex = 2;
@@ -569,7 +570,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1103, 580);
+            this.ClientSize = new System.Drawing.Size(1144, 580);
             this.Controls.Add(this.txt_search);
             this.Controls.Add(this.combo_size);
             this.Controls.Add(this.combo_search);
