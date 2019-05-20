@@ -22,6 +22,6 @@ F:\전공심화\프로젝트\a\WindowsFormsApplication1\WindowsFormsApplication1
 F:\전공심화\프로젝트\a\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Google.Protobuf.xml
 F:\전공심화\프로젝트\a\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\MySql.Data.xml
 F:\전공심화\프로젝트\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.buy.resources
-F:\전공심화\프로젝트\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojAssemblyReference.cache
-F:\전공심화\프로젝트\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
-F:\전공심화\프로젝트\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.CopyComplete
+F:\전공심화\프로젝트\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.buylist.resources
+F:\전공심화\프로젝트\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.test.resources
+F:\전공심화\프로젝트\a\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
